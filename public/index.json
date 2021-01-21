@@ -1,0 +1,50 @@
+[
+{
+	"uri": "/",
+	"title": "Enable AWS Security Hub",
+	"tags": [],
+	"description": "",
+	"content": "Enable AWS Security Hub AWS Security Hub gives you a comprehensive view of your high-priority security alerts and compliance status across AWS accounts.\nThere are a range of powerful security tools at your disposal, from firewalls and endpoint protection to vulnerability and compliance scanners. But oftentimes this leaves your team switching back-and-forth between these tools to deal with hundreds, and sometimes thousands, of security alerts every day. With Security Hub, you now have a single place that aggregates, organizes, and prioritizes your security alerts, or findings, from multiple AWS services, such as Amazon GuardDuty, Amazon Inspector, and Amazon Macie, as well as from AWS Partner solutions.\nYour findings are visually summarized on integrated dashboards with actionable graphs and tables. You can also continuously monitor your environment using automated compliance checks based on the AWS best practices and industry standards your organization follows. Get started with AWS Security Hub in just a few clicks in the Management Console and once enabled, Security Hub will begin aggregating and prioritizing findings.\nCosts  Typically less than $1 per month if the account is only used for personal testing or training, and the tear down is not performed. AWS Security Hub pricing AWS Pricing  Contents We devided this lab into section below:\n Security standards Enable Security Hub via Console  "
+},
+{
+	"uri": "/2-enable-sec-hub/1-enable-console/",
+	"title": "Enable Security Hub",
+	"tags": [],
+	"description": "",
+	"content": "Nội dung\n Kích hoạt Security Hub thông qua console  Kích hoạt Security Hub thông qua console Để kích hoạt Security Hub trên một Region, bạn hãy làm theo các bước sau đây:\n Đăng nhập vào Amazon Management Console. Tìm kiếm Security Hub trên thanh điều hướng Services. Ở trang AWS Security Hub, chọn Go to Security Hub.  Trên trang Welcome to AWS Security Hub, chọn các tiêu chuẩn về bảo mật (Security standards) như là AWS Foundational Security Best Practices, CIS AWS Foundations Benchmark hay PCI DSS.  Chọn Enable Security Hub. Sau khi kích hoạt, bạn sẽ cần chờ một khoản thời gian để Security Hub đánh giá Security Score của tài khoản hiện tại của bạn so với từng bộ tiêu chuẩn bảo mật mà bạn thiết lập.  Một số trường hợp bạn sẽ gặp thông báo liên quan đến về việc cấu hình AWS Config, hãy bật dịch vụ AWS Config tại Region tương ứng. Hầu hết các tiêu chí đánh gía dựa trên các service-level rule của AWS Config.\n\rTrường hợp bạn kích hoạt tính năng ghi nhận của AWS Config, hãy chọn phương án ghi nhận tất cả các tài nguyên trên Region tương ứng và các tài nguyên dạng global.\n\r"
+},
+{
+	"uri": "/1-security-standards/",
+	"title": "Security standards",
+	"tags": [],
+	"description": "",
+	"content": "Nội dung\n AWS Foundational Security Best Practices CIS AWS Foundations Benchmark PCI DSS  AWS Foundational Security Best Practices Tiêu chuẩn AWS Foundational Security Best Practices là một tập hợp các bài kiểm thử đánh gía tài khoản của bạn và các tài nguyên đang được triển khai sử dụng có đang được tuân theo các thực nghiệm tối ưu về bảo mật hay không. Tiêu chuẩn này được đưa ra bởi các chuyên gia bảo mật của AWS. Bộ tiêu chuẩn này giúp bạn trong việc cải thiện độ bảo mật của tài khoản AWS của bạn và đối với hầu hết các dịch vụ cơ bản và thông dụng của AWS.\nCIS AWS Foundations Benchmark Bộ tiêu chuẩn Center for Internet Security (CIS) AWS Foundations Benchmark là một bộ các cấu hình thực nghiệm tối ưu cho AWS. Tiêu chuẩn cho Security Hub này được tự động kiểm tra sự tuân thủ của bạn so với từng tập các yêu cầu nhỏ được đưa ra bởi CIS.\nPCI DSS Bộ tiêu chuẩn Payment Card Industry Data Security Standard (PCI DSS) là tiêu chuẩn an toàn thông tin cho các đối tượng lưu trữ, xử lý và truyền dữ liệu về thẻ ngân hàng. Tiêu chuẩn cho Security Hub này được tự động kiểm tra sự tuân thủ của bạn so với từng tập các yêu cầu nhỏ được đưa ra bởi PCI DSS.\n"
+},
+{
+	"uri": "/2-enable-sec-hub/",
+	"title": "Enable Security Hub",
+	"tags": [],
+	"description": "",
+	"content": "Để kích hoạt Security Hub, AWS có cung cấp cho người dùng một giao diện hình ảnh để tương tác với dịch vụ này. Ở bước này, chúng ta sẽ kích hoạt Security Hub thông qua giao diện console này.\nNội dung\n Các tiêu chuẩn bảo mật Kích hoạt Security Hub thông qua console Kiểm tra đánh giá theo từng bộ tiêu chuẩn  "
+},
+{
+	"uri": "/2-enable-sec-hub/2-security-score/",
+	"title": "Security Scores",
+	"tags": [],
+	"description": "",
+	"content": "Nội dung\n Kiểm tra đánh giá theo từng bộ tiêu chuẩn  Kiểm tra đánh giá theo từng bộ tiêu chuẩn Sau một khoản thời gian, Security Hub sẽ đưa ra các đánh giá dựa trên số điểm cũng như chỉ ra các rủi ro về bảo mật đang tồn tại trên tài khoản của bạn. Để liệt kê các rủi ro được tìm thấy, các bạn có thể truy cập vào từng bộ tiêu chuẩn để xem các điểm đánh giá:\n Đăng nhập vào Amazon Management Console. Tìm kiếm Security Hub trên thanh điều hướng Services. Ở thanh điều hướng bên trái, chọn Security standards để xem thông tin tổng quan về điểm đánh giá theo từng bộ tiêu chuẩn đánh giá bảo mật.  Để xem chi tiết các tiêu chí đánh giá của từng bộ tiêu chuẩn, chọn View results (theo từng bộ tiêu chuẩn.)  Với trường hợp, một số tiêu chí mà bạn không muốn áp dụng (loại bỏ khỏi đánh giá), bạn có thể chọn vào tiêu chí đó trong danh sách của bộ tiêu chuẩn. Ở trang thông tin chi tiết về tiêu chí, chọn Disable.  "
+},
+{
+	"uri": "/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

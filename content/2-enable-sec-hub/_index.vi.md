@@ -1,10 +1,10 @@
 +++
 title = "Kích hoạt Security Hub"
-date = 2020
 weight = 2
 chapter = false
 pre = "<b>2. </b>"
 +++
+
 #### Tổng quan
 
 Để kích hoạt Security Hub, AWS có cung cấp cho người dùng một giao diện hình ảnh để tương tác với dịch vụ này. Ở bước này, chúng ta sẽ kích hoạt Security Hub thông qua giao diện console này.

@@ -1,25 +1,23 @@
 +++
-title = "Điểm từng bộ tiêu chuẩn"
-date = 2021
+title = "Score for each set of criteria"
 weight = 3
 chapter = false
 pre = "<b>3. </b>"
 +++
 
+#### Check and evaluate each set of standards
 
-#### Kiểm tra đánh giá theo từng bộ tiêu chuẩn
+After a period of time, Security Hub will issue assessments based on the score and indicate the security risks that exist on your account. To list the risks found, you can visit each set of standards to see the rating points:
 
-Sau một khoản thời gian, Security Hub sẽ đưa ra các đánh giá dựa trên số điểm cũng như chỉ ra các rủi ro về bảo mật đang tồn tại trên tài khoản của bạn. Để liệt kê các rủi ro được tìm thấy, các bạn có thể truy cập vào từng bộ tiêu chuẩn để xem các điểm đánh giá:
-
-1. Đăng nhập vào **Amazon Management Console**. Trên thanh tìm kiếm, nhập và tìm kiếm dịch vụ **Security Hub**.
+1. Login to **Amazon Management Console**. In the search bar, type and search for **Security Hub** service.
 
 ![Security Hub](../../../images/1/2.1-1.png?width=90pc)
 
-2. Ở thanh điều hướng bên trái, chọn **Security standards** để xem thông tin tổng quan về điểm đánh giá theo từng bộ tiêu chuẩn đánh giá bảo mật.
+2. In the left navigation bar, select **Security standards** to see an overview of the assessment scores for each set of security assessment standards.
 
 ![Security Hub](../../../images/1/2.2-2.png?width=90pc)
 
-3. Để xem chi tiết các tiêu chí đánh giá của từng bộ tiêu chuẩn, chọn **View results** (theo từng bộ tiêu chuẩn.)
+3. To view the detailed evaluation criteria of each set of criteria, select **View results** (by each set of criteria.)
 
 ![Security Hub](../../../images/1/2.2-3.png?width=90pc)
 
@@ -27,12 +25,12 @@ Sau một khoản thời gian, Security Hub sẽ đưa ra các đánh giá dựa
 
 ![Security Hub](../../../images/1/2.2-5.png?width=90pc)
 
-4. Với trường hợp bạn có một số tiêu chí không muốn áp dụng, để loại bỏ khỏi đánh giá, bạn có thể chọn vào tiêu chí đó trong danh sách của bộ tiêu chuẩn.
-    - **Ví dụ**: Bạn muốn loại bỏ *EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT*.
+4. In case you have some criteria that you do not want to apply, to remove them from the evaluation, you can select that criterion in the list of criteria.
+    - **Example**: You want to remove *EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT*.
 ![Security Hub](../../../images/1/2.2-6a.png?width=90pc)
 
-2. Ở trang thông tin chi tiết về tiêu chí, chọn **Disable**.
+2. On the detailed information page of the criteria, select **Disable**.
 ![Security Hub](../../../images/1/2.2-6.png?width=90pc)
 
-3. Nhập lý do loại bỏ, chọn **Disable**.
+3. Enter the reason for the rejection, select **Disable**.
 ![Security Hub](../../../images/1/2.2-7.png?width=90pc)

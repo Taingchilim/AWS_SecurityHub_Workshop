@@ -1,15 +1,9 @@
 +++
 title = "Các tiêu chuẩn bảo mật"
-date = 2020
 weight = 1
 chapter = false
 pre = "<b>1. </b>"
 +++
-
-**Nội dung**
-- [AWS Foundational Security Best Practices](#aws-foundational-security-best-practices)
-- [CIS AWS Foundations Benchmark](#cis-aws-foundations-benchmark)
-- [PCI DSS](#pci-dss)
 
 #### AWS Foundational Security Best Practices
 

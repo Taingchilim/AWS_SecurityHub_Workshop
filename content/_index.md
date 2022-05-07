@@ -1,38 +1,37 @@
 +++
-title = "Sử dụng AWS Security Hub"
-date = 2021
+title = "Getting Started with AWS Security Hub"
 weight = 1
 chapter = false
 +++
 
-# Sử dụng AWS Security Hub
+# Get started with AWS Security Hub
 
-#### Tổng quan
+#### Overview
 
-**AWS Security** Hub cung cấp cho bạn cái nhìn toàn diện về các cảnh báo bảo mật ưu tiên cao và trạng thái tuân thủ trên các tài khoản AWS.
+**AWS Security** Hub gives you a comprehensive view of high priority security alerts and compliance status across AWS accounts.
 
-Sẽ có rất nhiều các công cụ bảo mật mạnh mẽ để bạn sử dụng, từ tường lửa hay ứng dụng bảo vệ endpoint đến các ứng dụng quét lỗ hổng và sự tuân thủ bảo mật. Nhưng đôi khi, điều này khiến đội ngũ của bạn phải chuyển đổi qua lại giữa các công cụ này để đối phó với hàng trăm, hàng nghìn cảnh báo bảo mật mỗi ngày. Với Security Hub, giờ đây bạn có một nơi tổng hợp duy nhất, sắp xếp và phân độ ưu tiên các cảnh báo hoặc phát hiện bảo mật từ nhiều dịch vụ AWS (như Amazon GuardDuty, Amazon Inspector và Amazon Macie) hay từ các giải pháp cung cấp bởi đối tác của AWS.
+There are a variety of powerful security tools at your disposal, from firewalls or endpoint protection applications to security compliance and vulnerability scanning applications. But sometimes, this causes your team to switch back and forth between these tools to deal with hundreds, if not thousands, of security alerts every day. With Security Hub, you now have a single place to aggregate, organize, and prioritize security alerts or detections from multiple AWS services (such as Amazon GuardDuty, Amazon Inspector, and Amazon Macie) or from other solutions. solution provided by an AWS partner.
 
-Các rủi ro được tìm thấy sẽ được tóm tắt trực quan trên trang tổng quan tích hợp với các biểu đồ và bảng mà bạn có thể tương tác. Bạn cũng có thể giám sát hệ thống của bạn liên tục bằng cách sử dụng chức năng kiểm tra tự động sự tuân thủ so với các thực nghiệm tối ưu từ AWS và các tiêu chuẩn trên thị trường mà doanh nghiệp của bạn đang tuân theo.
+The risks found are visually summarized on an integrated dashboard with charts and tables that you can interact with. You can also continuously monitor your system using automated compliance checks against best practices from AWS and the market standards your business is following.
 
-#### Chi phí
+![Security Hub](../images/serviceicon.png?featherlight=false&width=10pc)
 
-Thông thường, chi phí cho riêng **Security Hub** sẽ ít hơn $1 mỗi tháng nếu tài khoản của bạn chỉ sử dụng cho mục đích thử nghiệm, luyện tập và không thực hiện những cuộc tấn công giả lập.  
+#### Cost 
 
-Tuy nhiên ở bên dưới **AWS Security Hub** sẽ sử dụng AWS Config để kiểm tra tuân thủ ( Config rules ), nên bạn cũng sẽ phải trả chi phí cho AWS Config.
+Usually, it will cost less than $1 per month if your account is used for testing purposes only, practice and not performing mock attacks.
 
-**Bảng giá AWS Security Hub:**
+**AWS Security Hub Pricing:**
 
-| Nội dung                    | Chi phí                               | 
-|---------------------------- | ----------------                      |
-| **Kiểm tra bảo mật**        | 100,000 lần đầu tiên => $0.0010/check |
-|                             | 100,001 – 500,000 => $0.0008/check    |
-|                             | 500,001+ => $0.0005/check             |
-| **Tìm các sự kiện tấn công**| 10,000 lần đầu tiên => miễn phí       | 
-|                             | 10,001+ => $0.00003/lần               |
+| Contents | Cost |
+|---------------------------- | ---------------- |
+| **Security Check** | 100,000 first time => $0.0010/check |
+| | 100,001 – 500,000 => $0.0008/check |
+| | 500,001+ => $0.0005/check |
+| **Find attack events**| 10,000 first time => free |
+| | 10,001+ => $0.00003/time |
 
-#### Nội dung
+#### Content
 
-1. [Các tiêu chuẩn bảo mật](1-security-standards/)
-2. [Kích hoạt Security Hub trên Console](2-enable-sec-hub/)
-3. [Kiểm tra điểm đánh giá theo tiêu chuẩn](3-security-score/)
+1. [Security Standards](1-security-standards/)
+2. [Enable Security Hub on Console](2-enable-sec-hub/)
+3. [Standardized Assessment Score](3-security-score/)

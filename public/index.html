@@ -3,30 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.97.3" />
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Sử dụng AWS Security Hub :: Enable AWS Security Hub</title>
+    <title>Getting Started with AWS Security Hub :: Enable AWS Security Hub</title>
 
     
-    <link href="/css/nucleus.css?1625896956" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1625896956" rel="stylesheet">
-    <link href="/css/hybrid.css?1625896956" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1625896956" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1625896956" rel="stylesheet">
-    <link href="/css/auto-complete.css?1625896956" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1625896956" rel="stylesheet">
-    <link href="/css/theme.css?1625896956" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1625896956" rel="stylesheet">
+    <link href="/css/nucleus.css?1651890693" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1651890693" rel="stylesheet">
+    <link href="/css/hybrid.css?1651890693" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1651890693" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1651890693" rel="stylesheet">
+    <link href="/css/auto-complete.css?1651890693" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1651890693" rel="stylesheet">
+    <link href="/css/theme.css?1651890693" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1651890693" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1625896956" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1651890693" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1625896956"></script>
+    <script src="/js/jquery-3.3.1.min.js?1651890693"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1625896956"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1625896956"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1651890693"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1651890693"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1625896956"></script>
+<script type="text/javascript" src="/js/search.js?1651890693"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-security-standards/" title="Các tiêu chuẩn bảo mật" class="dd-item 
+    <li data-nav-id="/1-security-standards/" title="Security Standards" class="dd-item 
         
         
         
         ">
       <a href="/1-security-standards/">
-          <b>1. </b>Các tiêu chuẩn bảo mật
+          <b>1. </b>Security Standards
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-enable-sec-hub/" title="Kích hoạt Security Hub" class="dd-item 
+    <li data-nav-id="/2-enable-sec-hub/" title="Enable Security Hub" class="dd-item 
         
         
         
         ">
       <a href="/2-enable-sec-hub/">
-          <b>2. </b>Kích hoạt Security Hub
+          <b>2. </b>Enable Security Hub
           
             <i class="fas fa-check read-icon"></i>
           
@@ -134,13 +134,13 @@
  
   
     
-    <li data-nav-id="/3-security-score/" title="Điểm từng bộ tiêu chuẩn" class="dd-item 
+    <li data-nav-id="/3-security-score/" title="Score for each set of criteria" class="dd-item 
         
         
         
         ">
       <a href="/3-security-score/">
-          <b>3. </b>Điểm từng bộ tiêu chuẩn
+          <b>3. </b>Score for each set of criteria
           
             <i class="fas fa-check read-icon"></i>
           
@@ -160,13 +160,13 @@
  
   
     
-    <li data-nav-id="/4-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
+    <li data-nav-id="/4-cleanup/" title="Clean up resources" class="dd-item 
         
         
         
         ">
       <a href="/4-cleanup/">
-          <b>4. </b>Dọn dẹp tài nguyên
+          <b>4. </b>Clean up resources
           
             <i class="fas fa-check read-icon"></i>
           
@@ -188,11 +188,7 @@
         <ul>
           
               <li> 
-                  <a class="padding" href="http://awsstudygroup.com"><i class='fab fa-aws'></i> AWS Study Group - Blog</a>
-              </li>
-          
-              <li> 
-                  <a class="padding" href="https://www.facebook.com/groups/660548818043427/"><i class='fab fa-facebook'></i> AWS Study Group - FB Group</a>
+                  <a class="padding" href="https://www.facebook.com/groups/660548818043427/"><i class='fab fa-facebook'></i> AWS Study Group</a>
               </li>
           
         </ul>
@@ -265,8 +261,20 @@
     <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0" title="Total CLoud Journey" Alt="web counter"   border="0"   />
      
 </left>
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<left>
+    <br>
+    <br>
+        <b> Last Updated </b> <br>
+        <i><font color=orange>07-05-2022</font></i>
+    </left>
+    <left>
+        <br>
+        <br>
+            <b> Team </b> <br>
+            <i>
+                <a href="https://www.linkedin.com/in/jotaguy"  style="color:orange">Gia Hưng</a>
+        </i>
+</left>
 
     </section>
   </div>
@@ -293,26 +301,26 @@
 </span>
 
  
-<h1 id="sử-dụng-aws-security-hub">Sử dụng AWS Security Hub</h1>
-<h4 id="tổng-quan">Tổng quan</h4>
-<p><strong>AWS Security</strong> Hub cung cấp cho bạn cái nhìn toàn diện về các cảnh báo bảo mật ưu tiên cao và trạng thái tuân thủ trên các tài khoản AWS.</p>
-<p>Sẽ có rất nhiều các công cụ bảo mật mạnh mẽ để bạn sử dụng, từ tường lửa hay ứng dụng bảo vệ endpoint đến các ứng dụng quét lỗ hổng và sự tuân thủ bảo mật. Nhưng đôi khi, điều này khiến đội ngũ của bạn phải chuyển đổi qua lại giữa các công cụ này để đối phó với hàng trăm, hàng nghìn cảnh báo bảo mật mỗi ngày. Với Security Hub, giờ đây bạn có một nơi tổng hợp duy nhất, sắp xếp và phân độ ưu tiên các cảnh báo hoặc phát hiện bảo mật từ nhiều dịch vụ AWS (như Amazon GuardDuty, Amazon Inspector và Amazon Macie) hay từ các giải pháp cung cấp bởi đối tác của AWS.</p>
-<p>Các rủi ro được tìm thấy sẽ được tóm tắt trực quan trên trang tổng quan tích hợp với các biểu đồ và bảng mà bạn có thể tương tác. Bạn cũng có thể giám sát hệ thống của bạn liên tục bằng cách sử dụng chức năng kiểm tra tự động sự tuân thủ so với các thực nghiệm tối ưu từ AWS và các tiêu chuẩn trên thị trường mà doanh nghiệp của bạn đang tuân theo.</p>
-<h4 id="chi-phí">Chi phí</h4>
-<p>Thông thường, chi phí cho riêng <strong>Security Hub</strong> sẽ ít hơn $1 mỗi tháng nếu tài khoản của bạn chỉ sử dụng cho mục đích thử nghiệm, luyện tập và không thực hiện những cuộc tấn công giả lập.</p>
-<p>Tuy nhiên ở bên dưới <strong>AWS Security Hub</strong> sẽ sử dụng AWS Config để kiểm tra tuân thủ ( Config rules ), nên bạn cũng sẽ phải trả chi phí cho AWS Config.</p>
-<p><strong>Bảng giá AWS Security Hub:</strong></p>
+<h1 id="get-started-with-aws-security-hub">Get started with AWS Security Hub</h1>
+<h4 id="overview">Overview</h4>
+<p><strong>AWS Security</strong> Hub gives you a comprehensive view of high priority security alerts and compliance status across AWS accounts.</p>
+<p>There are a variety of powerful security tools at your disposal, from firewalls or endpoint protection applications to security compliance and vulnerability scanning applications. But sometimes, this causes your team to switch back and forth between these tools to deal with hundreds, if not thousands, of security alerts every day. With Security Hub, you now have a single place to aggregate, organize, and prioritize security alerts or detections from multiple AWS services (such as Amazon GuardDuty, Amazon Inspector, and Amazon Macie) or from other solutions. solution provided by an AWS partner.</p>
+<p>The risks found are visually summarized on an integrated dashboard with charts and tables that you can interact with. You can also continuously monitor your system using automated compliance checks against best practices from AWS and the market standards your business is following.</p>
+<p><img src="../images/serviceicon.png?featherlight=false&amp;width=10pc" alt="Security Hub"></p>
+<h4 id="cost">Cost</h4>
+<p>Usually, it will cost less than $1 per month if your account is used for testing purposes only, practice and not performing mock attacks.</p>
+<p><strong>AWS Security Hub Pricing:</strong></p>
 <table>
 <thead>
 <tr>
-<th>Nội dung</th>
-<th>Chi phí</th>
+<th>Contents</th>
+<th>Cost</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Kiểm tra bảo mật</strong></td>
-<td>100,000 lần đầu tiên =&gt; $0.0010/check</td>
+<td><strong>Security Check</strong></td>
+<td>100,000 first time =&gt; $0.0010/check</td>
 </tr>
 <tr>
 <td></td>
@@ -323,20 +331,20 @@
 <td>500,001+ =&gt; $0.0005/check</td>
 </tr>
 <tr>
-<td><strong>Tìm các sự kiện tấn công</strong></td>
-<td>10,000 lần đầu tiên =&gt; miễn phí</td>
+<td><strong>Find attack events</strong></td>
+<td>10,000 first time =&gt; free</td>
 </tr>
 <tr>
 <td></td>
-<td>10,001+ =&gt; $0.00003/lần</td>
+<td>10,001+ =&gt; $0.00003/time</td>
 </tr>
 </tbody>
 </table>
-<h4 id="nội-dung">Nội dung</h4>
+<h4 id="content">Content</h4>
 <ol>
-<li><a href="1-security-standards/">Các tiêu chuẩn bảo mật</a></li>
-<li><a href="2-enable-sec-hub/">Kích hoạt Security Hub trên Console</a></li>
-<li><a href="3-security-score/">Kiểm tra điểm đánh giá theo tiêu chuẩn</a></li>
+<li><a href="1-security-standards/">Security Standards</a></li>
+<li><a href="2-enable-sec-hub/">Enable Security Hub on Console</a></li>
+<li><a href="3-security-score/">Standardized Assessment Score</a></li>
 </ol>
 	
   
@@ -443,7 +451,7 @@
 	 
 		
 		
-			<a class="nav nav-next" href="/1-security-standards/" title="Các tiêu chuẩn bảo mật" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/1-security-standards/" title="Security Standards" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -453,19 +461,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1625896956"></script>
-    <script src="/js/perfect-scrollbar.min.js?1625896956"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1625896956"></script>
-    <script src="/js/jquery.sticky.js?1625896956"></script>
-    <script src="/js/featherlight.min.js?1625896956"></script>
-    <script src="/js/highlight.pack.js?1625896956"></script>
+    <script src="/js/clipboard.min.js?1651890693"></script>
+    <script src="/js/perfect-scrollbar.min.js?1651890693"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1651890693"></script>
+    <script src="/js/jquery.sticky.js?1651890693"></script>
+    <script src="/js/featherlight.min.js?1651890693"></script>
+    <script src="/js/highlight.pack.js?1651890693"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1625896956"></script>
-    <script src="/js/learn.js?1625896956"></script>
-    <script src="/js/hugo-learn.js?1625896956"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1651890693"></script>
+    <script src="/js/learn.js?1651890693"></script>
+    <script src="/js/hugo-learn.js?1651890693"></script>
 
-    <link href="/mermaid/mermaid.css?1625896956" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1625896956"></script>
+    <link href="/mermaid/mermaid.css?1651890693" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1651890693"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -1,30 +1,24 @@
 +++
-title = "Các tiêu chuẩn bảo mật"
-date = 2020
+title = "Security Standards"
 weight = 1
 chapter = false
 pre = "<b>1. </b>"
 +++
 
-**Nội dung**
-- [AWS Foundational Security Best Practices](#aws-foundational-security-best-practices)
-- [CIS AWS Foundations Benchmark](#cis-aws-foundations-benchmark)
-- [PCI DSS](#pci-dss)
-
 #### AWS Foundational Security Best Practices
 
 ![AWS](../../../images/1/aws.png?width=30pc)
 
-Tiêu chuẩn **AWS Foundational Security Best Practices** là một tập hợp các bài kiểm tra xem tài khoản của bạn và các tài nguyên đang được triển khai sử dụng có đang được tuân theo các thực nghiệm tối ưu về bảo mật hay không. Tiêu chuẩn này được đưa ra bởi các chuyên gia bảo mật của AWS. Bộ tiêu chuẩn này giúp bạn trong việc cải thiện độ bảo mật của tài khoản AWS của bạn và đối với hầu hết các dịch vụ cơ bản và thông dụng của AWS.
+The **AWS Foundational Security Best Practices** standard is a set of tests that see if your account and the resources being deployed are being followed by best security practices. This standard was developed by AWS security experts. This set of standards helps you improve the security of your AWS account and for most of the basic and popular AWS services.
 
 #### CIS AWS Foundations Benchmark
 
 ![CIS](../../../images/1/cis.png?width=30pc)
 
-Bộ tiêu chuẩn **Center for Internet Security (CIS) AWS Foundations Benchmark** là một bộ các cấu hình thực nghiệm tối ưu cho AWS. Tiêu chuẩn cho Security Hub này được tự động kiểm tra sự tuân thủ của bạn so với từng tập các yêu cầu nhỏ được đưa ra bởi CIS.
+The **Center for Internet Security (CIS) AWS Foundations Benchmark** is a set of experimental configurations optimized for AWS. This Security Hub benchmark is automatically checked for your compliance against each small set of requirements set forth by the CIS.
 
 #### PCI DSS
 
-![PCI DSS](../../../images/1/pcidss.png?width=20pc)
+![PCI DSS](../../../images/1/pcids.png?width=20pc)
 
-Bộ tiêu chuẩn **Payment Card Industry Data Security Standard (PCI DSS)** là tiêu chuẩn an toàn thông tin cho các đối tượng lưu trữ, xử lý và truyền dữ liệu về thẻ ngân hàng. Tiêu chuẩn cho Security Hub này được tự động kiểm tra sự tuân thủ của bạn so với từng tập các yêu cầu nhỏ được đưa ra bởi PCI DSS.
+**Payment Card Industry Data Security Standard (PCI DSS)** is an information security standard for objects that store, process and transmit data about bank cards. This Security Hub benchmark is automatically checked for your compliance against each small set of requirements set forth by the PCI DSS.

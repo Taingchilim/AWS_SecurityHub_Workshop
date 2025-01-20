@@ -1,24 +1,24 @@
 +++
-title = "Các tiêu chuẩn bảo mật"
+title = "ស្តង់ដារសន្តិសុខ"
 weight = 1
 chapter = false
 pre = "<b>1. </b>"
 +++
 
-#### AWS Foundational Security Best Practices
+#### ការអនុវត្តល្អបំផុតផ្នែកសន្តិសុខមូលដ្ឋាន AWS
 
 ![AWS](/images/1/aws.png?width=30pc)
 
-Tiêu chuẩn **AWS Foundational Security Best Practices** là một tập hợp các bài kiểm tra xem tài khoản của bạn và các tài nguyên đang được triển khai sử dụng có đang được tuân theo các thực nghiệm tối ưu về bảo mật hay không. Tiêu chuẩn này được đưa ra bởi các chuyên gia bảo mật của AWS. Bộ tiêu chuẩn này giúp bạn trong việc cải thiện độ bảo mật của tài khoản AWS của bạn và đối với hầu hết các dịch vụ cơ bản và thông dụng của AWS.
+ស្តង់ដារ **ការអនុវត្តល្អបំផុតផ្នែកសន្តិសុខមូលដ្ឋាន AWS** គឺជាបណ្តុំនៃការត្រួតពិនិត្យដើម្បីពិនិត្យមើលថាតើគណនីរបស់អ្នក និងធនធានដែលកំពុងប្រើប្រាស់កំពុងអនុវត្តតាមការអនុវត្តល្អបំផុតផ្នែកសន្តិសុខដែរឬទេ។ ស្តង់ដារនេះត្រូវបានបង្កើតឡើងដោយអ្នកជំនាញសន្តិសុខរបស់ AWS។ បណ្តុំស្តង់ដារនេះជួយអ្នកក្នុងការកែលម្អសន្តិសុខនៃគណនី AWS របស់អ្នក និងសម្រាប់សេវាកម្មមូលដ្ឋាន និងទូទៅភាគច្រើនរបស់ AWS។
 
-#### CIS AWS Foundations Benchmark
+#### ស្តង់ដារមូលដ្ឋាន CIS AWS
 
 ![CIS](/images/1/cis.png?width=30pc)
 
-Bộ tiêu chuẩn **Center for Internet Security (CIS) AWS Foundations Benchmark** là một bộ các cấu hình thực nghiệm tối ưu cho AWS. Tiêu chuẩn cho Security Hub này được tự động kiểm tra sự tuân thủ của bạn so với từng tập các yêu cầu nhỏ được đưa ra bởi CIS.
+ស្តង់ដារ **មជ្ឈមណ្ឌលសន្តិសុខអ៊ីនធឺណិត (CIS) មូលដ្ឋាន AWS** គឺជាបណ្តុំនៃការកំណត់រចនាសម្ព័ន្ធដែលល្អបំផុតសម្រាប់ AWS។ ស្តង់ដារសម្រាប់ Security Hub នេះត្រួតពិនិត្យដោយស្វ័យប្រវត្តិនូវការគោរពតាមតម្រូវការតូចៗនីមួយៗដែលត្រូវបានកំណត់ដោយ CIS។
 
 #### PCI DSS
 
 ![PCI DSS](/images/1/pcidss.png?width=20pc)
 
-Bộ tiêu chuẩn **Payment Card Industry Data Security Standard (PCI DSS)** là tiêu chuẩn an toàn thông tin cho các đối tượng lưu trữ, xử lý và truyền dữ liệu về thẻ ngân hàng. Tiêu chuẩn cho Security Hub này được tự động kiểm tra sự tuân thủ của bạn so với từng tập các yêu cầu nhỏ được đưa ra bởi PCI DSS.
+ស្តង់ដារ **ស្តង់ដារសន្តិសុខទិន្នន័យឧស្សាហកម្មកាតទូទាត់ (PCI DSS)** គឺជាស្តង់ដារសន្តិសុខព័ត៌មានសម្រាប់អង្គភាពដែលរក្សាទុក ដំណើរការ និងបញ្ជូនទិន្នន័យកាតធនាគារ។ ស្តង់ដារសម្រាប់ Security Hub នេះត្រួតពិនិត្យដោយស្វ័យប្រវត្តិនូវការគោរពតាមតម្រូវការតូចៗនីមួយៗដែលត្រូវបានកំណត់ដោយ PCI DSS។

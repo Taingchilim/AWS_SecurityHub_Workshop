@@ -31,7 +31,7 @@ weight = 20
 [Languages.vi]
 title = "Kích hoạt AWS Security Hub"
 weight = 2
-languageName = "Tiếng Việt"
+languageName = "Khmer"
 
 [[Languages.vi.menu.shortcuts]]
 name = "<i class='fab fa-facebook'></i> AWS Study Group"

@@ -1,37 +1,37 @@
 +++
-title = "Bắt đầu với AWS Security Hub"
+title = "ចាប់ផ្តើមជាមួយ AWS Security Hub"
 weight = 1
 chapter = false
 +++
 
-# Bắt đầu với AWS Security Hub
+# ចាប់ផ្តើមជាមួយ AWS Security Hub
 
-#### Tổng quan
+#### ទិដ្ឋភាពទូទៅ
 
-**AWS Security** Hub cung cấp cho bạn cái nhìn toàn diện về các cảnh báo bảo mật ưu tiên cao và trạng thái tuân thủ trên các tài khoản AWS.
+**AWS Security Hub** ផ្តល់ជូនអ្នកនូវទិដ្ឋភាពទូលំទូលាយនៃការព្រមានសន្តិសុខអាទិភាពខ្ពស់ និងស្ថានភាពអនុលោមភាពនៅលើគណនី AWS របស់អ្នក។
 
-Sẽ có rất nhiều các công cụ bảo mật mạnh mẽ để bạn sử dụng, từ tường lửa hay ứng dụng bảo vệ endpoint đến các ứng dụng quét lỗ hổng và sự tuân thủ bảo mật. Nhưng đôi khi, điều này khiến đội ngũ của bạn phải chuyển đổi qua lại giữa các công cụ này để đối phó với hàng trăm, hàng nghìn cảnh báo bảo mật mỗi ngày. Với Security Hub, giờ đây bạn có một nơi tổng hợp duy nhất, sắp xếp và phân độ ưu tiên các cảnh báo hoặc phát hiện bảo mật từ nhiều dịch vụ AWS (như Amazon GuardDuty, Amazon Inspector và Amazon Macie) hay từ các giải pháp cung cấp bởi đối tác của AWS.
+មានឧបករណ៍សន្តិសុខដ៏មានឥទ្ធិពលជាច្រើនសម្រាប់អ្នកប្រើប្រាស់ ចាប់ពីជញ្ជាំងការពារ និងកម្មវិធីការពារចុងបញ្ចប់ រហូតដល់កម្មវិធីស្កែនភាពងាយរងគ្រោះ និងអនុលោមភាពសន្តិសុខ។ ប៉ុន្តែជួនកាល នេះធ្វើឱ្យក្រុមរបស់អ្នកត្រូវប្តូរទៅមកនៅក្នុងចំណោមឧបករណ៍ទាំងនេះ ដើម្បីដោះស្រាយការព្រមានសន្តិសុខរាប់រយ រាប់ពាន់ជារៀងរាល់ថ្ងៃ។ ជាមួយ Security Hub ឥឡូវនេះអ្នកមានកន្លែងបញ្ចូលគ្នាតែមួយ ដើម្បីរៀបចំ និងកំណត់អាទិភាពការព្រមាន ឬការរកឃើញសន្តិសុខពីសេវាកម្ម AWS ជាច្រើន (ដូចជា Amazon GuardDuty, Amazon Inspector និង Amazon Macie) ឬពីដំណោះស្រាយដែលផ្តល់ដោយដៃគូ AWS។
 
-Các rủi ro được tìm thấy sẽ được tóm tắt trực quan trên trang tổng quan tích hợp với các biểu đồ và bảng mà bạn có thể tương tác. Bạn cũng có thể giám sát hệ thống của bạn liên tục bằng cách sử dụng chức năng kiểm tra tự động sự tuân thủ so với các thực nghiệm tối ưu từ AWS và các tiêu chuẩn trên thị trường mà doanh nghiệp của bạn đang tuân theo.
+ហានិភ័យដែលរកឃើញនឹងត្រូវបានសង្ខេបជាក់ស្តែងនៅលើផ្ទាំងគ្រប់គ្រងរួមជាមួយក្រាហ្វិក និងតារាងដែលអ្នកអាចធ្វើអន្តរកម្មបាន។ អ្នកក៏អាចត្រួតពិនិត្យប្រព័ន្ធរបស់អ្នកជាបន្តបន្ទាប់ដោយប្រើមុខងារត្រួតពិនិត្យអនុលោមភាពស្វ័យប្រវត្តិធៀបនឹងការអនុវត្តល្អបំផុតពី AWS និងស្តង់ដារទីផ្សារដែលអាជីវកម្មរបស់អ្នកកំពុងអនុវត្ត។
 
 ![Security Hub](../images/serviceicon.png?featherlight=false&width=10pc)
 
-#### Chi phí
+#### តម្លៃ
 
-Thông thường, chi phí sẽ ít hơn $1 mỗi tháng nếu tài khoản của bạn chỉ sử dụng cho mục đích thử nghiệm, luyện tập và không thực hiện những cuộc tấn công giả lập.  
+ជាធម្មតា តម្លៃនឹងតិចជាង $1 ក្នុងមួយខែ ប្រសិនបើគណនីរបស់អ្នកត្រូវបានប្រើសម្រាប់តែការសាកល្បង ការអនុវត្ត និងមិនធ្វើការវាយប្រហារក្លែងក្លាយ។
 
-**Bảng giá AWS Security Hub:**
+**តារាងតម្លៃ AWS Security Hub៖**
 
-| Nội dung                    | Chi phí                               | 
+| មាតិកា                      | តម្លៃ                                  |
 |---------------------------- | ----------------                      |
-| **Kiểm tra bảo mật**        | 100,000 lần đầu tiên => $0.0010/check |
-|                             | 100,001 – 500,000 => $0.0008/check    |
-|                             | 500,001+ => $0.0005/check             |
-| **Tìm các sự kiện tấn công**| 10,000 lần đầu tiên => miễn phí       | 
-|                             | 10,001+ => $0.00003/lần               |
+| **ការត្រួតពិនិត្យសន្តិសុខ**    | 100,000 ដំបូង => $0.0010/ការត្រួតពិនិត្យ |
+|                             | 100,001 – 500,000 => $0.0008/ការត្រួតពិនិត្យ |
+|                             | 500,001+ => $0.0005/ការត្រួតពិនិត្យ      |
+| **ស្វែងរកព្រឹត្តិការណ៍វាយប្រហារ** | 10,000 ដំបូង => ឥតគិតថ្លៃ              |
+|                             | 10,001+ => $0.00003/លើក              |
 
-#### Nội dung
+#### មាតិកា
 
-1. [Các tiêu chuẩn bảo mật](1-security-standards/)
-2. [Kích hoạt Security Hub trên Console](2-enable-sec-hub/)
-3. [Kiểm tra điểm đánh giá theo tiêu chuẩn](3-security-score/)
+1. [ស្តង់ដារសន្តិសុខ](1-security-standards/)
+2. [បើកដំណើរការ Security Hub នៅលើ Console](2-enable-sec-hub/)
+3. [ពិនិត្យពិន្ទុវាយតម្លៃតាមស្តង់ដារ](3-security-score/)

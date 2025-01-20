@@ -1,24 +1,23 @@
 +++
-title = "Điểm từng bộ tiêu chuẩn"
+title = "ពិន្ទុតាមបណ្តុំស្តង់ដារនីមួយៗ"
 weight = 3
 chapter = false
 pre = "<b>3. </b>"
 +++
 
+#### ការត្រួតពិនិត្យការវាយតម្លៃតាមបណ្តុំស្តង់ដារនីមួយៗ
 
-#### Kiểm tra đánh giá theo từng bộ tiêu chuẩn
+បន្ទាប់ពីរយៈពេលមួយ Security Hub នឹងផ្តល់ការវាយតម្លៃដោយផ្អែកលើពិន្ទុ ព្រមទាំងបង្ហាញពីហានិភ័យសន្តិសុខដែលមាននៅក្នុងគណនីរបស់អ្នក។ ដើម្បីរាយបញ្ជីហានិភ័យដែលបានរកឃើញ អ្នកអាចចូលទៅកាន់បណ្តុំស្តង់ដារនីមួយៗដើម្បីមើលពិន្ទុវាយតម្លៃ៖
 
-Sau một khoản thời gian, Security Hub sẽ đưa ra các đánh giá dựa trên số điểm cũng như chỉ ra các rủi ro về bảo mật đang tồn tại trên tài khoản của bạn. Để liệt kê các rủi ro được tìm thấy, các bạn có thể truy cập vào từng bộ tiêu chuẩn để xem các điểm đánh giá:
-
-1. Đăng nhập vào **Amazon Management Console**. Trên thanh tìm kiếm, nhập và tìm kiếm dịch vụ **Security Hub**.
+1. ចូលទៅ **Amazon Management Console**។ នៅលើរបារស្វែងរក វាយបញ្ចូល និងស្វែងរកសេវាកម្ម **Security Hub**។
 
 ![Security Hub](/images/1/2.1-1.png?width=90pc)
 
-2. Ở thanh điều hướng bên trái, chọn **Security standards** để xem thông tin tổng quan về điểm đánh giá theo từng bộ tiêu chuẩn đánh giá bảo mật.
+2. នៅរបាររុករកខាងឆ្វេង ជ្រើសរើស **Security standards** ដើម្បីមើលព័ត៌មានទូទៅអំពីពិន្ទុវាយតម្លៃតាមបណ្តុំស្តង់ដារវាយតម្លៃសន្តិសុខនីមួយៗ។
 
 ![Security Hub](/images/1/2.2-2.png?width=90pc)
 
-3. Để xem chi tiết các tiêu chí đánh giá của từng bộ tiêu chuẩn, chọn **View results** (theo từng bộ tiêu chuẩn.)
+3. ដើម្បីមើលព័ត៌មានលម្អិតនៃលក្ខណៈវិនិច្ឆ័យវាយតម្លៃនៃបណ្តុំស្តង់ដារនីមួយៗ ជ្រើសរើស **View results** (តាមបណ្តុំស្តង់ដារនីមួយៗ។)
 
 ![Security Hub](/images/1/2.2-3.png?width=90pc)
 
@@ -26,15 +25,15 @@ Sau một khoản thời gian, Security Hub sẽ đưa ra các đánh giá dựa
 
 ![Security Hub](/images/1/2.2-5.png?width=90pc)
 
-4. Với trường hợp bạn có một số tiêu chí không muốn áp dụng, để loại bỏ khỏi đánh giá, bạn có thể chọn vào tiêu chí đó trong danh sách của bộ tiêu chuẩn.
-    - **Ví dụ**: Bạn muốn loại bỏ *EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT*.
+4. ក្នុងករណីដែលអ្នកមានលក្ខណៈវិនិច្ឆ័យមួយចំនួនដែលអ្នកមិនចង់អនុវត្ត ដើម្បីដកចេញពីការវាយតម្លៃ អ្នកអាចជ្រើសរើសលក្ខណៈវិនិច្ឆ័យនោះនៅក្នុងបញ្ជីនៃបណ្តុំស្តង់ដារ។
+    - **ឧទាហរណ៍**: អ្នកចង់ដកចេញ *EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT*។
 
 ![Security Hub](/images/1/2.2-6.png?width=90pc)
 
-- Ở trang thông tin chi tiết về tiêu chí, ấn **Enabled**, sau đó chọn **Disable**.
+- នៅទំព័រព័ត៌មានលម្អិតអំពីលក្ខណៈវិនិច្ឆ័យ ចុច **Enabled** បន្ទាប់មកជ្រើសរើស **Disable**។
 
 ![Security Hub](/images/1/2.2-7.png?width=90pc)
 
-- Nhập lý do loại bỏ, chọn **Disable**.
+- វាយបញ្ចូលហេតុផលនៃការដកចេញ ជ្រើសរើស **Disable**។
 
 ![Security Hub](/images/1/2.2-8.png?width=90pc)

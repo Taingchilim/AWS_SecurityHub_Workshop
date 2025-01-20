@@ -1,17 +1,18 @@
 +++
-title = "Dọn dẹp tài nguyên"
+title = "ការសម្អាតធនធាន"
 date = 2021-07-07T21:33:20+07:00
 weight = 4
 chapter = false
 pre = "<b>4. </b>"
 +++
 
-Ở phần này, bạn sẽ tắt AWS Security Hub để không phát sinh chi phí cho tài khoản AWS của bạn ( Phần lớn chi phí của việc bật Security Hub đến từ AWS Config ). Tuy nhiên, nếu bạn đang triển khai trên môi trường production, bạn nên để AWS Security Hub hoạt động để giúp bạn quản lý an ninh tài khoản tốt hơn.
-#### Bỏ kích hoạt AWS Security Hub
+នៅក្នុងផ្នែកនេះ អ្នកនឹងបិទ AWS Security Hub ដើម្បីកុំឱ្យមានការចំណាយលើគណនី AWS របស់អ្នក (ការចំណាយភាគច្រើននៃការបើក Security Hub មកពី AWS Config)។ ទោះជាយ៉ាងណាក៏ដោយ ប្រសិនបើអ្នកកំពុងដាក់ឱ្យដំណើរការនៅក្នុងបរិយាកាសផលិតកម្ម អ្នកគួរទុកឱ្យ AWS Security Hub ដំណើរការដើម្បីជួយអ្នកគ្រប់គ្រងសន្តិសុខគណនីឱ្យកាន់តែប្រសើរ។
 
-1. Truy cập vào Security Hub Management Console
-    - Chọn Settings ở thanh bên trái
+#### បិទការបើកដំណើរការ AWS Security Hub
 
-2. Trong trang **Settings** ở bên phải, chọn tab General
-    - Cuộn xuống dưới cùng và chọn Disable AWS Security Hub
-    - Trong prompt, chọn Disable AWS Security Hub
+1. ចូលទៅកាន់ Security Hub Management Console
+    - ជ្រើសរើស Settings នៅរបារខាងឆ្វេង
+
+2. នៅក្នុងទំព័រ **Settings** នៅខាងស្តាំ ជ្រើសរើសថេប General
+    - រមូរចុះក្រោម និងជ្រើសរើស Disable AWS Security Hub
+    - នៅក្នុង prompt ជ្រើសរើស Disable AWS Security Hub

@@ -11,29 +11,29 @@ pre = "<b>3. </b>"
 
 1. ចូលទៅ **Amazon Management Console**។ នៅលើរបារស្វែងរក វាយបញ្ចូល និងស្វែងរកសេវាកម្ម **Security Hub**។
 
-![Security Hub](/images/1/2.1-1.png?width=90pc)
+![Security Hub](/public/images/1/2.1-1.png?width=90pc)
 
 2. នៅរបាររុករកខាងឆ្វេង ជ្រើសរើស **Security standards** ដើម្បីមើលព័ត៌មានទូទៅអំពីពិន្ទុវាយតម្លៃតាមបណ្តុំស្តង់ដារវាយតម្លៃសន្តិសុខនីមួយៗ។
 
-![Security Hub](/images/1/2.2-2.png?width=90pc)
+![Security Hub](/public/images/1/2.2-2.png?width=90pc)
 
 3. ដើម្បីមើលព័ត៌មានលម្អិតនៃលក្ខណៈវិនិច្ឆ័យវាយតម្លៃនៃបណ្តុំស្តង់ដារនីមួយៗ ជ្រើសរើស **View results** (តាមបណ្តុំស្តង់ដារនីមួយៗ។)
 
-![Security Hub](/images/1/2.2-3.png?width=90pc)
+![Security Hub](/public/images/1/2.2-3.png?width=90pc)
 
-![Security Hub](/images/1/2.2-4.png?width=90pc)
+![Security Hub](/public/images/1/2.2-4.png?width=90pc)
 
-![Security Hub](/images/1/2.2-5.png?width=90pc)
+![Security Hub](/public/images/1/2.2-5.png?width=90pc)
 
 4. ក្នុងករណីដែលអ្នកមានលក្ខណៈវិនិច្ឆ័យមួយចំនួនដែលអ្នកមិនចង់អនុវត្ត ដើម្បីដកចេញពីការវាយតម្លៃ អ្នកអាចជ្រើសរើសលក្ខណៈវិនិច្ឆ័យនោះនៅក្នុងបញ្ជីនៃបណ្តុំស្តង់ដារ។
     - **ឧទាហរណ៍**: អ្នកចង់ដកចេញ *EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT*។
 
-![Security Hub](/images/1/2.2-6.png?width=90pc)
+![Security Hub](/public/images/1/2.2-6.png?width=90pc)
 
 - នៅទំព័រព័ត៌មានលម្អិតអំពីលក្ខណៈវិនិច្ឆ័យ ចុច **Enabled** បន្ទាប់មកជ្រើសរើស **Disable**។
 
-![Security Hub](/images/1/2.2-7.png?width=90pc)
+![Security Hub](/public/images/1/2.2-7.png?width=90pc)
 
 - វាយបញ្ចូលហេតុផលនៃការដកចេញ ជ្រើសរើស **Disable**។
 
-![Security Hub](/images/1/2.2-8.png?width=90pc)
+![Security Hub](/public/images/1/2.2-8.png?width=90pc)
